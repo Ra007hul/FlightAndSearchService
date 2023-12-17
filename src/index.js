@@ -11,10 +11,10 @@ const setupAndStartServer=async ()=>{
   app.use(bodyParser.urlencoded({extended:true}));
 
   
-  app.listen(PORT,()=>{
+  app.listen(PORT, async ()=>{
          console.log(`Server started at port ${PORT}`);
          const repo = new CityRepository();
-         repo.createCity({name: "New Delhi"});
+         await repo.createCity({name: "New Delhi"});
         
          
   });
