@@ -1,6 +1,7 @@
-const { CityService, CityService }= require('../services/index');
+const { CityService }= require('../services/index');
 
 const cityService= new CityService();
+
  //POST /city --> req.bosy
 const create = async (req,res) => {
     try {
@@ -39,7 +40,7 @@ const destroy = async (req,res)=>{
             data:{},
             success: false,
             message: 'not able to delete a city',
-            err:error
+            err: error
         })
 
     }
