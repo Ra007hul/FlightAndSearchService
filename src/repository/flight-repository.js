@@ -81,7 +81,7 @@ module.exports= FlightRepository;
  * departureAirportId
  * arrivalAirportId
  * arrivalTime,
- * departureTime,
+ * DepartureTime,
  * price,
  * totalSeats -> airplane
  *
